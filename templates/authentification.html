@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Authentification
+{% endblock %}
+
+{% block main %}
+    <p>Код: 1234</p>
+    <form action="/login" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" required="required" name="code" placeholder="4 digit code" type="number">
+        </div>
+        <button class="btn btn-primary" type="submit">Enter</button>
+    </form>
+{% endblock %}

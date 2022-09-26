@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Authentification
+{% endblock %}
+
+{% block main %}
+
+    {% for contract in contracts %}
+        <div class="block">
+
+            <div class="block2">
+                <table>
+                    <tr>
+                    <td>{{ contract['number'] }}</td>
+                    <td></td>
+                    
+                    </tr>
+                    <tr>
+                        <td>{{ contract['subject'] }}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>ООО "ЛенГазСпецСтрой"</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>01-10-2022</td>
+                        <td></td>
+                        
+                    </tr>
+                </table>
+                
+            </div>
+
+            <div class="block1">
+                <table>
+                    <tr>
+                        <td style="font-size: 26px;">{{ contract['percentage'] }}%</td>
+                        <td>Процентная ставка</td>
+                    </tr>
+                    <tr>
+                        <td>{{ contract['user_price'] }}</td>
+                    <td>Подлежит выплате</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>{{ contract['our_price'] }}</td>
+                        <td>Размер скидки </td>
+                    </tr>
+                </table>
+                <button class="download">Произвести раннюю выплату</button>
+            </div>
+
+            
+        </div>
+        <br>
+        <br>
+    {% endfor %}
+
+{% endblock %}
