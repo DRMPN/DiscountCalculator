@@ -1,0 +1,132 @@
+.block1 {
+  margin-left: 50px;
+  text-align: center;
+  background: #ffffff;
+  width: 320px;
+  height: 150px;
+  padding-top: 15px;
+  border-radius: 7px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+  font-family: 'Roboto', sans-serif;
+  padding-left: 20px;
+}
+.block1 table{
+  
+  text-align: left;
+ 
+  width: 300px;
+  height: 120px;
+  float: left
+  
+}
+
+.block2 {
+  margin-left: 50px;
+  margin-right: 10px;
+  text-align: center;
+  background: #ffffff;
+  width: 500px;
+  height: 150px;
+  padding-top: 15px;
+  border-radius: 7px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+  font-family: 'Roboto', sans-serif;
+  padding-left: 20px;
+}
+.block2 table {
+  
+  text-align: left;
+  
+  width: 500px;
+  height: 75px;
+  float: left
+  
+}
+
+.block {
+  display: flex;
+  margin: 0;
+  justify-content: center
+  
+}
+
+.download {
+  align-items: center;
+  margin: 10px 0 0 0;
+  width: 200px;
+  height: 40px;
+ 
+  font-size: 14px;
+  color: white;
+  background: #1E88E5;
+  border-radius: 5px;
+  border: 0;
+
+}
+
+@media (max-width: 900px) {
+  nav {
+    display: flex;
+  }
+  .block {
+    display: block;
+    /* margin: 0;
+    justify-content: center */
+    
+  }
+
+  .block2 {
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 3px;
+    text-align: center;
+    background: #ffffff;
+    width: 385px;
+    height: 150px;
+    padding-top: 15px;
+    border-radius: 7px;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, .2);
+    font-family: 'Roboto', sans-serif;
+    padding-left: 20px;
+  }
+  .block2 table {
+  
+    text-align: left;
+    
+    width: 385px;
+    height: 75px;
+    float: left
+    
+  }
+
+  .block1 {
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 3px;
+    text-align: center;
+    background: #ffffff;
+    width: 385px;
+    height: 150px;
+    padding-top: 15px;
+    border-radius: 7px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+    font-family: 'Roboto', sans-serif;
+    padding-left: 20px;
+  }
+  .block1 table{
+    
+    text-align: left;
+   
+    width: 385px;
+    height: 120px;
+    float: left
+    
+  }
+  .container p-5 {
+    padding-left: 3px;
+  }
+
+  .lab {
+    width: 380px
+  }
+}

@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+    <p>Логин: 1234 Пароль: 1234</p>
+    <form action="/login" method="post">
+        <!-- inn 12 symbols -->
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="inn" placeholder="12 цифр ИНН" type="text">
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="password" placeholder="Введите пароль" type="password">
+        </div>
+        <button class="btn btn-primary" type="submit">Вход</button>
+    </form>
+{% endblock %}
